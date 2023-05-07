@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container" ><!--in action place we put the server location-->
+        <form action="">
+
+            <h1 class="main_Heading">PAYMENT FORM </h1>
+            <h2>Contact Information</h2>
+            <p>Name:<input type="text"name="Name" placeholder="First Name" required></p>
+            <!--place holder is to show what to type in the form-->
+            <!--required is used so that the field is required -->
+    
+            <fieldset>
+                <legend>Gender</legend>
+                <p>
+                    <!-- for radio we need to put the name same because we need to select any one -->
+                    Male <input type="radio" name="gender" id="male" required>
+                    Female <input type="radio" name="gender" id="female" required>
+                </p>
+            </fieldset>
+            <p> Address : <textarea name="Address" id="" cols="70" rows="10"></textarea> </p>
+            <p>Email :  <input type="email" name="Email" id="Email" required></p>
+            <p>Pincode : <input type="number" name="pincode" id="pincode" required></p>
+            <hr>
+            <h2>Payment Information</h2>
+            <p>Card Type : 
+                <select name="Card_Type" id="Card_type">
+    
+                    <!--we Need to keep the 1st option empty because or else it will got to the server as it is-->
+                    <option value="">--Select a card  Type--</option>
+                    <option value="Visa">Visa</option>
+                    <option value="Rupay">Rupay</option>
+                    <option value="Master Card">Master Card</option>
+                </select>
+            </p>
+
+            <p>Card Number : <input type="number" name="Card_number" id="Card Number"> </p>
+            <p>Experiation Date : <input type="Date" name="Experiation_Date" id="Experiation_Date"></p>
+            <p>CVV : <input type="password" name="CVV" id="CVV"></p>
+            <input type="submit" value="Pay Now">
+            <input type="reset" >
+            
+        </form></div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
